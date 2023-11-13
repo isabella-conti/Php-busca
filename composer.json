@@ -1,0 +1,17 @@
+{
+    "name": "isabella-conti/php-busca",
+    "description": "Projeto que busca cursos na pagina alura",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "IsabellaConti\\PhpBusca\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "isabella-conti",
+            "email": "ircontif@gmail.com"
+        }
+    ],
+    "require": {}
+}
