@@ -10,10 +10,9 @@ $response = $client->request('GET', 'https://www.alura.com.br/cursos-online-prog
 
 $html = $response->getBody();
 
-$crawler = new Crawler();
-$crawler->addHtmlContent($html);
+$crawler = new Crawler($html);
 
-$cursos = $crawler->filterXPath('//span[@class="card-curso__nome"]');
+$cursos = $crawler->filter('span.card-curso__nome');
 
 foreach ($cursos as $curso) {
     echo $curso->textContent . PHP_EOL;
